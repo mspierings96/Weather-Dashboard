@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Weather Dashboard</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <p>Search for a City:</p> 
+                <input type="text" id="search-input">
+                <button type="submit" id="search-btn">
+                Search
+                </button>
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <div class="row">
+                <div class="col-sm-12" id="live-weather">
+                    <h3 class="city-name" id="city-selected"></h3>
+                    <p>Temp:</p>
+                    <p>Wind:</p>
+                    <p>Humidity:</p>
+                    <p>UV Index:</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12" id="forecast">
+            <h3>5 Day Forecast</h3>
+            <div class="row">
+                <div class="col-sm-2">
+                    <p></p>
+                    <p></p>
+                    <p>Temp:</p>
+                    <p>Wind:</p>
+                    <p>Humidity:</p>
+                </div>
+                <div class="col-sm-2">
+                    <p></p>
+                    <p></p>
+                    <p>Temp:</p>
+                    <p>Wind:</p>
+                    <p>Humidity:</p>
+                </div>
+                <div class="col-sm-2">
+                    <p></p>
+                    <p></p>
+                    <p>Temp:</p>
+                    <p>Wind:</p>
+                    <p>Humidity:</p>
+                </div>
+                <div class="col-sm-2">
+                    <p></p>
+                    <p></p>
+                    <p>Temp:</p>
+                    <p>Wind:</p>
+                    <p>Humidity:</p>
+                </div>
+                <div class="col-sm-2">
+                    <p></p>
+                    <p></p>
+                    <p>Temp:</p>
+                    <p>Wind:</p>
+                    <p>Humidity:</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tempInfo">
+
+    <script src="assets/script.js"> </script>
+</body>
+
+
+</html>
