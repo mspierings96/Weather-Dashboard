@@ -23,66 +23,37 @@
             <div class="col-sm-4">
                 <p>Search for a City:</p> 
                 <input type="text" id="search-input">
-                <button type="submit" id="search-btn">
+                <button id="search-btn">
                 Search
                 </button>
+                <div id='history'></div>
             </div>
-        </div>
+        
         <div class="col-sm-8">
             <div class="row">
                 <div class="col-sm-12" id="live-weather">
                     <h3 class="city-name" id="city-selected"></h3>
-                    <p>Temp:</p>
-                    <p>Wind:</p>
-                    <p>Humidity:</p>
-                    <p>UV Index:</p>
+                    <p id='temp'>Temp:</p>
+                    <p id="wind">Wind:</p>
+                    <p id='Humidity'>Humidity:</p>
+                    <p id='uv-Index'>UV Index:</p>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-12" id="forecast">
-            <h3>5 Day Forecast</h3>
-            <div class="row">
-                <div class="col-sm-2">
-                    <p></p>
-                    <p></p>
-                    <p>Temp:</p>
-                    <p>Wind:</p>
-                    <p>Humidity:</p>
-                </div>
-                <div class="col-sm-2">
-                    <p></p>
-                    <p></p>
-                    <p>Temp:</p>
-                    <p>Wind:</p>
-                    <p>Humidity:</p>
-                </div>
-                <div class="col-sm-2">
-                    <p></p>
-                    <p></p>
-                    <p>Temp:</p>
-                    <p>Wind:</p>
-                    <p>Humidity:</p>
-                </div>
-                <div class="col-sm-2">
-                    <p></p>
-                    <p></p>
-                    <p>Temp:</p>
-                    <p>Wind:</p>
-                    <p>Humidity:</p>
-                </div>
-                <div class="col-sm-2">
-                    <p></p>
-                    <p></p>
-                    <p>Temp:</p>
-                    <p>Wind:</p>
-                    <p>Humidity:</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="tempInfo">
 
-    <script src="assets/script.js"> </script>
+            <div class="col-sm-12" id="forecast">
+                <h3>5 Day Forecast</h3>
+                <div class="row 5-Day">
+                   
+                </div>
+            </div>
+
+        </div>
+      
+    </div>
+</div>
+    <!-- <div class="tempInfo"> -->
+
+    <script src="./assets/script.js"> </script>
 </body>
 
 
