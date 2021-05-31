@@ -4,7 +4,7 @@ console.log('file loaded!!!')
 $("#search-btn").on("click", function() {
     console.log($("#search-input").val())
     saveLocal($("#search-input").val())
-    var URL = "http://api.openweathermap.org/data/2.5/weather?q=" + $("#search-input").val() + "&appid=bd0834857d11c7c26292f5e1e8657635&units=imperial"
+    var URL = "https://api.openweathermap.org/data/2.5/weather?q=" + $("#search-input").val() + "&appid=bd0834857d11c7c26292f5e1e8657635&units=imperial"
     fetch(URL)
     .then(response => {
      
@@ -85,7 +85,7 @@ function fiveDay(lat, lon) {
     for (let i = 0; i < 5; i++) {
         var day = new Date(realResponse.daily[i].dt*1000);
         
-        let iconurl = "http://openweathermap.org/img/w/" + realResponse.daily[i].weather[0].icon + ".png"
+        let iconurl = "https://openweathermap.org/img/w/" + realResponse.daily[i].weather[0].icon + ".png"
 
 
         var containerDiv = $('<div>')
